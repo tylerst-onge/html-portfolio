@@ -1,0 +1,47 @@
+#block-871040bc46d399459e17
+ {
+    opacity: 0.5;
+}
+#block-871040bc46d399459e17:hover {
+    opacity: 1; /* Set to 1 for full opacity on hover */
+    transition: opacity 0.3s ease; /* Add a smooth transition effect */
+}
+#block-871040bc46d399459e17
+:before{
+    content: 'Heated Seats';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #ffffff; /* Set the text color */
+    font-size: 28px; /* Adjust the font size as needed */
+    font-weight: bold; /* Adjust the font weight as needed */
+    padding: 10px; /* Adjust the padding as needed */
+    white-space: nowrap;
+    background-color: rgba(0, 0, 0, 0.7);// /* Set the background color with opacity */
+    border: 2px solid #ffffff; /* Set the border properties */
+    z-index: 1;
+    transition: opacity 0.3s ease;
+}
+#block-871040bc46d399459e17 {
+    position: relative; /* Set the position of the container to relative */
+}
+
+#block-871040bc46d399459e17:hover:before {
+    content: "Stay connected on the go with added power outlets in your vehicle. Whether it's charging your devices or powering accessories, our installations make it easy. Keep your devices juiced up without missing a beat, transforming your car into a mobile hub.";
+    position: absolute;
+    top: 100%; /* Position the hover text at the bottom of the container */
+    left: 50%;
+    transform: translateX(-50%);
+    opacity: 0;
+    color: #ffffff;
+    font-size: 16px; /* Adjust the font size as needed */
+    font-weight: normal; /* Adjust the font weight as needed */
+    padding: 20px 0px 20px 40px; /* Adjust the padding (top/bottom) and increase the width */
+  text-align: left;
+  width: 300px;
+}
+
+#block-871040bc46d399459e17:hover:before {
+    opacity: 1; /* Change opacity to 1 on hover to make it visible */
+}
