@@ -1,0 +1,57 @@
+#block-yui_3_17_2_1_1705356419893_144416 {
+    position: relative; /* Set the position of the container to relative */
+    opacity: 0.7; /* Set default opacity to a lower value */
+    transition: opacity 0.3s ease; /* Add a smooth transition effect */
+}
+
+#block-yui_3_17_2_1_1705356419893_144416:before {
+    content: 'Cruise Control';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #ffffff; /* Set the text color */
+    font-size: 28px; /* Adjust the font size as needed */
+    font-weight: bold; /* Adjust the font weight as needed */
+    padding: 10px; /* Adjust the padding as needed */
+    white-space: nowrap;
+    background-color: rgba(0, 0, 0, 0.7); /* Set the background color with opacity */
+    border: 2px solid #ffffff; /* Set the border properties */
+    z-index: 1;
+    opacity: 1; /* Set the hover opacity to full */
+    transition: opacity 0.3s ease; /* Add a smooth transition effect */
+}
+
+#block-yui_3_17_2_1_1705356419893_144416:hover {
+    opacity: 1; /* Change opacity to full on hover */
+}
+
+#block-yui_3_17_2_1_1705356419893_144416 img {
+    transition: opacity 0.3s ease;
+}
+
+#block-yui_3_17_2_1_1705356419893_144416:hover img {
+    opacity: 1; /* Set the opacity to match the hover state for the image */
+}
+
+#block-yui_3_17_2_1_1705356419893_144416:after {
+    content: "Enhance your driving experience with Cruise Control. Set your preferred speed and let your vehicle maintain a steady pace, giving you a more relaxed and comfortable journey.";
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    transform: translateX(-50%);
+    opacity: 0; /* Start with 0 opacity */
+    color: #ffffff;
+    font-size: 16px;
+    font-weight: normal;
+    padding: 20px 0 20px 40px;
+    text-align: left;
+    width: 300px;
+    white-space: normal; /* Allow multiline text */
+    transition: opacity 0.3s ease;
+}
+
+#block-yui_3_17_2_1_1705356419893_144416:hover:after {
+    opacity: 1; /* Change opacity to 1 on hover to make the additional text visible */
+}
+
