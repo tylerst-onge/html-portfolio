@@ -1,7 +1,8 @@
+/* Desktop View (hover effect) */
 #block-cbee46c39bad2ebadc30 {
-    position: relative; /* Set the position of the container to relative */
-    opacity: 0.7; /* Set default opacity to a lower value */
-    transition: opacity 0.3s ease; /* Add a smooth transition effect */
+    position: relative;
+    opacity: 0.7;
+    transition: opacity 0.3s ease;
 }
 
 #block-cbee46c39bad2ebadc30:before {
@@ -10,20 +11,20 @@
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    color: #ffffff; /* Set the text color */
-    font-size: 28px; /* Adjust the font size as needed */
-    font-weight: bold; /* Adjust the font weight as needed */
-    padding: 10px; /* Adjust the padding as needed */
+    color: #ffffff;
+    font-size: 28px;
+    font-weight: bold;
+    padding: 10px;
     white-space: nowrap;
-    background-color: rgba(0, 0, 0, 0.7); /* Set the background color with opacity */
-    border: 2px solid #ffffff; /* Set the border properties */
+    background-color: rgba(0, 0, 0, 0.7);
+    border: 2px solid #ffffff;
     z-index: 1;
-    opacity: 1; /* Set the hover opacity to full */
-    transition: opacity 0.3s ease; /* Add a smooth transition effect */
+    opacity: 1;
+    transition: opacity 0.3s ease;
 }
 
 #block-cbee46c39bad2ebadc30:hover {
-    opacity: 1; /* Change opacity to full on hover */
+    opacity: 1;
 }
 
 #block-cbee46c39bad2ebadc30 img {
@@ -31,7 +32,7 @@
 }
 
 #block-cbee46c39bad2ebadc30:hover img {
-    opacity: 1; /* Set the opacity to match the hover state for the image */
+    opacity: 1;
 }
 
 #block-cbee46c39bad2ebadc30:after {
@@ -40,17 +41,36 @@
     top: 100%;
     left: 50%;
     transform: translateX(-50%);
-    opacity: 0; /* Start with 0 opacity */
+    opacity: 0;
     color: #ffffff;
     font-size: 16px;
     font-weight: normal;
     padding: 20px 0 20px 40px;
     text-align: left;
     width: 300px;
-    white-space: normal; /* Allow multiline text */
+    white-space: normal;
     transition: opacity 0.3s ease;
 }
 
 #block-cbee46c39bad2ebadc30:hover:after {
-    opacity: 1; /* Change opacity to 1 on hover to make the additional text visible */
+    opacity: 1;
+}
+
+/* Mobile View (no hover effect) */
+@media (max-width: 767px) {
+    #block-cbee46c39bad2ebadc30 {
+        opacity: 1;
+    }
+
+    #block-cbee46c39bad2ebadc30:before {
+        opacity: 1;
+    }
+
+    #block-cbee46c39bad2ebadc30 img {
+        opacity: 1;
+    }
+
+    #block-cbee46c39bad2ebadc30:after {
+        opacity: 1;
+    }
 }
